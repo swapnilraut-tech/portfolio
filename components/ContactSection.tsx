@@ -60,6 +60,7 @@ export default function ContactSection() {
                 <button
                   onClick={handleCopyEmail}
                   type="button"
+                  suppressHydrationWarning
                   className="flex-shrink-0 px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-500/10 text-amber-300 border border-amber-500/30 hover:bg-amber-500/20 transition-colors"
                 >
                   {copied ? "Copied! ✓" : "Copy"}
@@ -132,6 +133,7 @@ export default function ContactSection() {
                     id="contact-name"
                     type="text"
                     required
+                    suppressHydrationWarning
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="e.g. Alex Sharma"
@@ -147,6 +149,7 @@ export default function ContactSection() {
                     id="contact-email"
                     type="email"
                     required
+                    suppressHydrationWarning
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="e.g. alex@company.com"
@@ -162,6 +165,7 @@ export default function ContactSection() {
                     id="contact-message"
                     required
                     rows={4}
+                    suppressHydrationWarning
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell me about the role, product, or stack..."
@@ -171,6 +175,7 @@ export default function ContactSection() {
 
                 <button
                   type="submit"
+                  suppressHydrationWarning
                   className="w-full py-3.5 px-6 rounded-xl text-sm font-semibold text-black bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/35 transition-all duration-200"
                 >
                   Send Message 🚀

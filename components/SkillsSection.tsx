@@ -34,6 +34,8 @@ export default function SkillsSection() {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           <button
             onClick={() => setActiveCategory("all")}
+            type="button"
+            suppressHydrationWarning
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
               activeCategory === "all"
                 ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"
@@ -44,6 +46,8 @@ export default function SkillsSection() {
           </button>
           <button
             onClick={() => setActiveCategory("frontend")}
+            type="button"
+            suppressHydrationWarning
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
               activeCategory === "frontend"
                 ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"
@@ -54,6 +58,8 @@ export default function SkillsSection() {
           </button>
           <button
             onClick={() => setActiveCategory("mobile")}
+            type="button"
+            suppressHydrationWarning
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
               activeCategory === "mobile"
                 ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"
@@ -64,6 +70,8 @@ export default function SkillsSection() {
           </button>
           <button
             onClick={() => setActiveCategory("backend")}
+            type="button"
+            suppressHydrationWarning
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
               activeCategory === "backend"
                 ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"
@@ -74,6 +82,8 @@ export default function SkillsSection() {
           </button>
           <button
             onClick={() => setActiveCategory("tools")}
+            type="button"
+            suppressHydrationWarning
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
               activeCategory === "tools"
                 ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"

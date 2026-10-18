@@ -38,6 +38,8 @@ export default function ProjectsSection() {
             <button
               key={tab}
               onClick={() => setActiveFilter(tab)}
+              type="button"
+              suppressHydrationWarning
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
                 activeFilter === tab
                   ? "bg-amber-400 text-black font-semibold shadow-md shadow-amber-500/25"

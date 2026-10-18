@@ -96,6 +96,7 @@ export default function HeroSection() {
               <button
                 onClick={handleCopyEmail}
                 type="button"
+                suppressHydrationWarning
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/90 border border-amber-500/25 hover:border-amber-400/50 hover:bg-slate-800/80 transition-all duration-200"
               >
                 <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
