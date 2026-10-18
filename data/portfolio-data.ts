@@ -4,6 +4,7 @@ export interface ProjectItem {
   category: "Full Stack" | "Frontend" | "Mobile" | "Backend";
   tagline: string;
   description: string;
+  highlights?: { title: string; desc: string }[];
   tags: string[];
   metrics?: string;
   githubUrl?: string;
@@ -134,63 +135,45 @@ export const PORTFOLIO_DATA = {
     },
   ] as ExperienceItem[],
 
-  /* 
-   * NOTE FOR SWAPNIL:
-   * Project details can be updated easily here whenever you are ready!
-   * Just replace the title, tagline, tags, and github/live links.
-   */
   projects: [
     {
-      id: "project-enterprise-portal",
-      title: "Enterprise ERP & Operations Hub",
+      id: "project-ragnar-dataops",
+      title: "Ragnar DataOps",
       category: "Full Stack",
-      tagline: "Automated business workflow engine with real-time analytics",
+      tagline: "Enterprise Modern Web Platform with Headless CMS & Lead Pipelines",
       description:
-        "Engineered a scalable multi-tenant management portal built with Frappe Framework, React.js, and Node.js. Features automated report generation, custom role-based permissions, and fast relational database queries.",
-      tags: ["Frappe Framework", "Python", "React.js", "MySQL", "Tailwind CSS"],
-      metrics: "40% faster data retrieval & streamlined daily operations",
-      githubUrl: "https://github.com",
-      liveUrl: "https://swapnil-demo.vercel.app",
+        "Architected and built a high-performance, responsive enterprise web application featuring a custom dark-tech design system, automated lead-generation pipelines, and Headless Frappe/ERPNext CMS.",
+      highlights: [
+        {
+          title: "Modern Web Platform Architecture",
+          desc: "Engineered a fast, responsive enterprise web app using Next.js, React, and Tailwind CSS with a custom dark-tech design system.",
+        },
+        {
+          title: "Headless CMS & Integrations",
+          desc: "Integrated Frappe / ERPNext CMS for real-time blog delivery and embedded Cal.com for automated meeting scheduling.",
+        },
+        {
+          title: "Lead Generation & Data Pipelines",
+          desc: "Implemented custom API routes for webinar registrations and lead-capture forms, connecting directly with backend business systems.",
+        },
+        {
+          title: "SEO & Performance Tuning",
+          desc: "Optimized Core Web Vitals, dynamic sitemaps with next-sitemap, and structured OpenGraph metadata for superior search discoverability.",
+        },
+      ],
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Headless CMS (ERPNext/Frappe)",
+        "REST APIs",
+        "SEO Optimization",
+        "Cal.com Embed",
+      ],
+      metrics: "Live Enterprise Production • Optimized Core Web Vitals",
+      liveUrl: "https://ragnardataops.com/",
       featured: true,
-    },
-    {
-      id: "project-saas-platform",
-      title: "Next.js 16 Cloud Commerce & Analytics",
-      category: "Full Stack",
-      tagline: "Ultra-fast modern commerce with App Router & Server Components",
-      description:
-        "High-performance cloud storefront and dashboard powered by Next.js 16, TypeScript, and MongoDB. Includes TanStack Query data caching, instant search filtering, and responsive glassmorphic UI.",
-      tags: ["Next.js 16", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
-      metrics: "99+ Lighthouse performance & sub-second page loads",
-      githubUrl: "https://github.com",
-      liveUrl: "https://swapnil-demo.vercel.app",
-      featured: true,
-    },
-    {
-      id: "project-mobile-crossplatform",
-      title: "PulseFit - React Native & Expo Mobile App",
-      category: "Mobile",
-      tagline: "Cross-platform iOS & Android lifestyle tracker with offline sync",
-      description:
-        "Cross-platform mobile application featuring smooth 60fps animations, NativeWind styling, device sensor integration, and offline-first state synchronization via Redux Toolkit.",
-      tags: ["React Native", "Expo", "NativeWind", "Redux Toolkit", "TypeScript"],
-      metrics: "Shared 90%+ codebase between iOS & Android",
-      githubUrl: "https://github.com",
-      liveUrl: "https://swapnil-demo.vercel.app",
-      featured: true,
-    },
-    {
-      id: "project-rest-api-service",
-      title: "Microservices API Gateway & Engine",
-      category: "Backend",
-      tagline: "Secure RESTful API infrastructure with automated token validation",
-      description:
-        "Modular Node.js and Express backend service handling high concurrent user requests, JWT authentication, MariaDB transactions, and structured logging.",
-      tags: ["Node.js", "Express.js", "MariaDB", "RESTful APIs", "JWT"],
-      metrics: "Under 60ms average API response latency",
-      githubUrl: "https://github.com",
-      liveUrl: "https://swapnil-demo.vercel.app",
-      featured: false,
     },
   ] as ProjectItem[],
 };

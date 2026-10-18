@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Whatsapp } from "@/components/whatsappfloating";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full flex flex-col bg-[#07090e] text-slate-100 selection:bg-amber-500/30 selection:text-amber-200"
       >
+        <Whatsapp />
         {children}
       </body>
     </html>
