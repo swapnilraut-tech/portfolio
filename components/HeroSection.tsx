@@ -23,7 +23,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-grid-pattern">
+    <section className="relative pt-24 pb-10 sm:pt-32 sm:pb-16 md:pt-40 md:pb-24 overflow-hidden bg-grid-pattern">
       {/* Ambient background glow orbs */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute top-1/3 left-10 w-[350px] h-[350px] bg-sky-500/5 rounded-full blur-[100px] pointer-events-none" />
@@ -44,16 +44,16 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-3">
-              <h2 className="text-sm uppercase tracking-widest text-slate-400 font-mono font-semibold">
+            <div className="space-y-2.5 sm:space-y-3">
+              <h2 className="text-xs sm:text-sm uppercase tracking-widest text-slate-400 font-mono font-semibold">
                 Hi there, I am
               </h2>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
                 Swapnil{" "}
                 <span className="shimmer-text">Raut</span>
               </h1>
-              <p className="text-xl sm:text-2xl font-semibold text-slate-200 leading-snug">
-                Full Stack & Cross-Platform Mobile Engineer
+              <p className="text-lg sm:text-2xl font-semibold text-slate-200 leading-snug">
+                Full Stack &amp; Cross-Platform Mobile Engineer
               </p>
             </div>
 

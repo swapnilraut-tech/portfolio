@@ -15,25 +15,25 @@ export default function ProjectsSection() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="py-24 relative border-t border-slate-800/80 bg-[#080c14]/60">
+    <section id="projects" className="py-12 sm:py-20 md:py-24 relative border-t border-slate-800/80 bg-[#080c14]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3 mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono">
             <span>PORTFOLIO SHOWCASE</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Featured Projects &amp; Live Platforms
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-400 text-xs sm:text-base leading-relaxed">
             Real-world enterprise production systems built with clean architecture, headless integrations, and high performance.
           </p>
         </div>
 
         {/* Filter Navigation (renders if more than 1 category) */}
         {categories.length > 2 && (
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-12">
             {categories.map((tab) => (
               <button
                 key={tab}
@@ -53,11 +53,11 @@ export default function ProjectsSection() {
         )}
 
         {/* Projects Grid */}
-        <div className="space-y-10">
+        <div className="space-y-8 sm:space-y-10">
           {filteredProjects.map((project: ProjectItem) => (
             <div
               key={project.id}
-              className="glass-panel rounded-3xl p-7 sm:p-10 border border-amber-500/25 shadow-2xl relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300"
+              className="glass-panel rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 border border-amber-500/25 shadow-2xl relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300"
             >
               {/* Subtle ambient corner gradient glow */}
               <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-amber-500/15 transition-all duration-500" />

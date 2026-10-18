@@ -25,18 +25,18 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 relative border-t border-slate-800/80">
+    <section id="contact" className="py-12 sm:py-20 md:py-24 relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3 mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono">
             <span>GET IN TOUCH</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Let&apos;s Build Something High-Performance
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-400 text-xs sm:text-base leading-relaxed">
             I am currently open to full-time engineering roles, remote opportunities, and exciting full-stack projects.
           </p>
         </div>

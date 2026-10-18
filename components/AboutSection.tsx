@@ -32,27 +32,27 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-24 relative border-t border-slate-800/80">
+    <section id="about" className="py-12 sm:py-20 md:py-24 relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3 mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono">
             <span>ABOUT ME</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Engineering intuitive, high-performance solutions
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-400 text-xs sm:text-base leading-relaxed">
             I enjoy converting complex business requirements into intuitive, scalable, and responsive applications.
           </p>
         </div>
 
         {/* Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
           
           {/* Bio Card */}
-          <div className="lg:col-span-7 glass-panel rounded-2xl p-8 border border-amber-500/20 shadow-xl flex flex-col justify-between space-y-6">
+          <div className="lg:col-span-7 glass-panel rounded-2xl p-5 sm:p-8 border border-amber-500/20 shadow-xl flex flex-col justify-between space-y-5 sm:space-y-6">
             <div className="space-y-4 text-slate-300 leading-relaxed text-base">
               <p className="font-semibold text-lg text-white">
                 👋 Hello! I&apos;m Swapnil Raut, based in Solapur, Maharashtra, India.

@@ -14,24 +14,24 @@ export default function SkillsSection() {
       : categories.filter((c) => c.title.toLowerCase().includes(activeCategory));
 
   return (
-    <section id="skills" className="py-24 relative border-t border-slate-800/80 bg-[#090d15]/50">
+    <section id="skills" className="py-12 sm:py-20 md:py-24 relative border-t border-slate-800/80 bg-[#090d15]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3 mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono">
             <span>TECHNICAL CAPABILITIES</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             What I Bring to the Table
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-400 text-xs sm:text-base leading-relaxed">
             A comprehensive, modern tech stack engineered for responsive user experiences, robust backends, and maintainable systems.
           </p>
         </div>
 
         {/* Filter Navigation Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-12">
           <button
             onClick={() => setActiveCategory("all")}
             type="button"
