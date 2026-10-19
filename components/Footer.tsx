@@ -13,7 +13,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           
-          {/* Logo & copyright */}
           <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
             <div className="flex items-center gap-2">
               <span className="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-500/30 flex items-center justify-center font-mono font-bold text-amber-400 text-sm">
@@ -29,28 +28,27 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick links & Back to top */}
           <div className="flex items-center gap-6">
             <Link
-              href="#about"
+              href="/#about"
               className="text-xs text-slate-400 hover:text-amber-400 transition-colors"
             >
               About
             </Link>
             <Link
-              href="#skills"
+              href="/#skills"
               className="text-xs text-slate-400 hover:text-amber-400 transition-colors"
             >
               Skills
             </Link>
             <Link
-              href="#projects"
+              href="/projects"
               className="text-xs text-slate-400 hover:text-amber-400 transition-colors"
             >
               Projects
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="text-xs text-slate-400 hover:text-amber-400 transition-colors"
             >
               Contact
@@ -71,7 +69,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Small tech badge */}
         <div className="mt-8 pt-6 border-t border-slate-900 text-center">
           <p className="text-[11px] font-mono text-slate-600">
             Engineered with Next.js 16 (App Router), React 19, TypeScript &amp; Tailwind CSS
